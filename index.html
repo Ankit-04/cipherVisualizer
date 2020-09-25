@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Cipher Visualizer</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <p>Kryptor</p>
+        </div>
+    </header>
+
+    <div class="mainPage">
+        <div class="container" id="input-text">
+            <p id= "container-title">Input</p><br>
+            <textarea  class = "text-box" id="input-string"  onkeypress= "updateText()">Sally sells she shells by the sea shore</textarea>
+        </div>
+        <div class="container">
+            <select id = "myList">
+                <option value = "1">One</option>
+                <option value = "2">two</option>
+                <option value = "3">three</option>
+                <option value = "4">four</option>
+              </select>
+        </div>
+        <div class="container" id="input-text">
+            <p id= "container-title">Output</p><br>
+            <textarea  class = "text-box" id="output-text">Sally sells she shells by the sea shore</textarea>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>Coded by Ankit Gupta</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

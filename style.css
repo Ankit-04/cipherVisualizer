@@ -1,0 +1,98 @@
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+}
+
+header,
+footer
+{
+   background-color:  #F6F6F8;
+   height: 10vh;
+   min-width : 100vw;
+   color: #3FB0AC;
+   display: flex;
+   flex-wrap: wrap;
+}
+header{
+    padding-top: 0vh;
+}
+.mainPage{
+    background-color: #E3E3E3;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer{
+    color: #3FB0AC;
+}
+.title{
+    margin: 0vh;
+    padding-top: 0vh;
+    font-size:3vh;
+    margin-left: 4vw;
+    align-self: center;
+    justify-content: flex-start;
+    text-transform: none;
+    font-weight: 600;
+    
+}
+
+.footer-text{
+    margin: 0vh;
+    width: 100%;
+    padding: 0vh;
+    font-size:2vh;
+    align-self: center;
+    text-align: center;
+    font-weight: 100;
+}
+.container{
+    background-color: #F6F6F8;
+    width: 20vw;
+    height: 60vh;
+    border-radius: 15px;
+    color: #3FB0AC;
+    padding-left: 4vw;
+    padding-top: 3vh;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+#container-title{
+    font-weight: 700;
+    font-size: 2.5vh;
+    margin: 0px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.text-box{
+    margin: 0px;
+    width :14vw;
+    height: 40vh;
+    outline: none;
+    border: 5px #E3E3E3;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #F6F6F8;
+    color: #3FB0AC;
+    padding: 1vh;
+    font-size: 1.65vh;
+    resize: none;
+}
+#myList{
+    background-color:transparent;
+    border: none;
+    outline: none;
+    font-size: 2.5vh;
+    font-weight: 700;
+    color: #3FB0AC;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 14vw;
+}
