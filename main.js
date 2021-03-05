@@ -44,11 +44,10 @@ function ceaserCihper(text){
         if (message[i] === " "){
             continue;
         }
-        index = letters.indexOf(message[i]);
-        if(index === -1){
+        if(letters.indexOf(message[i]) === -1){
             return "Error! Message has letters not in the alphabet"
         }        
-        index = (index + shift) % (letters.length);
+        index = (letters.indexOf(message[i]) + shift) % (letters.length);
         message[i] = letters[index] 
     }
 
@@ -59,24 +58,23 @@ function vigenereCipher(text){
     var key = document.getElementById("vigenere-input-key").value;
     var letters = document.getElementById("vigenere-input-alphabet").value;
     var message = text.toLowerCase();
-    var index; 
+    var index = 0; 
 
-    key = key.split();
-    message = message.split();
-    letters = letters.split();
+    key = key.split("");
+    message = message.split("");
+    letters = letters.split("");
 
-    for(var i= 0; i < message.length; i++){
-        if(message === ' '){
+    for(var i = 0; i < message.length; i++){
+        if (message[i] === ' '){
+
             continue;
         }
-        index = letters.indexOf(message[i]);
-
-        
-
-        index = (index + letters.indexOf(key[i%key.length]) % (letters.length));
-        message[i] = letters[index];
-        console.log(message);
-
+        if (letters.indexOf(message[i]) === -1){
+            console.log(message[i])
+            return "Error! Message has letters not in the alphabet"
+        }
+        message[i] = letters[(letters.indexOf(message[i]) + letters.indexOf(key[index%key.length])) % letters.length];
+        index ++;
     }
     return message.join("");
 }
