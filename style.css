@@ -122,7 +122,7 @@ header
     display: flex;
 
 }
-.ceaser-input{
+.cipher-input{
     border: 5px #E3E3E3;
     border-style: solid;
     color: #3FB0AC;
@@ -132,6 +132,7 @@ header
     font-size: 1.75vh;
     padding: 1vh;
     margin-top: 1vh;
+    border-radius: 10px;
 }
 
 label{
@@ -140,11 +141,17 @@ label{
 
 #ceaser-input-alphabet{
     height: 15vh;
-    border-radius: 10px;
     resize: none;
     font-family: 'Roboto', sans-serif;
 }
 #ceaser-input-shift{
-    border-radius: 10px;
     text-align: center;
+}
+#vigenere-input-alphabet{
+    height: 15vh;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+}
+#vigenere-input-shift{
+    text-align: left;
 }

@@ -18,9 +18,9 @@
             <select onchange="displayAlgo()" name="algorithum" id="algo-select">
                 <option disabled selected hidden>chose an algorithum</option>
                 <option value="ceaser-cipher" >Ceaser Cipher</option>
-                <option value="alberti-cipher">Alberti cipher</option>
+                <option value="vigenere-cipher">Vigenere cipher</option>
             </select>
-            <button id="submit-button" onclick="eyncript()">Submit</button>
+            <button id="submit-button" onclick="encrypt()">Submit</button>
         </div>
 
         <div class="mainPage">
@@ -34,14 +34,21 @@
                     <div class="form">
                         <form>
                             <label>Alphabet</label><br>
-                            <textarea  class = "ceaser-input" id="ceaser-input-alphabet" >abcdefghijklmnopqrstuvwxyz</textarea><br><br>
+                            <textarea  class = "cipher-input" id="ceaser-input-alphabet" >abcdefghijklmnopqrstuvwxyz</textarea><br><br>
                             <label>Shift</label><br>
-                            <input type="number" class="ceaser-input" id="ceaser-input-shift" min="1" max="26">
+                            <input type="number" class="cipher-input" id="ceaser-input-shift" min="1" max="26">
                         </form>
                     </div>
                 </div> 
-                <div class="cipher" id="alberti-cipher">
-                    im alberti-cipher
+                <div class="cipher" id="vigenere-cipher">
+                    <div class="form">
+                        <form>
+                            <label>Alphabet</label><br>
+                            <textarea  class = "cipher-input" id="vigenere-input-alphabet" >abcdefghijklmnopqrstuvwxyz</textarea><br><br>
+                            <label>Key</label><br>
+                            <input class="cipher-input" id="vigenere-input-key">
+                        </form>
+                    </div>
                 </div> 
             </div>
             <div class="container" id="output-text">
